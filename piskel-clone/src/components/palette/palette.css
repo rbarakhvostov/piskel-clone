@@ -1,0 +1,7 @@
+.palette {
+  width: 95px;
+  height: 95px;
+  grid-area: palette;
+
+  border: 1px solid yellow;
+}

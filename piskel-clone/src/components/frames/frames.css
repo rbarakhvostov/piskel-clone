@@ -1,0 +1,15 @@
+.frames-container {
+  grid-area: frames-container;
+  align-self: start;
+  height: 540px;
+  overflow-y: auto;
+  cursor: pointer;
+
+  width: 140px;
+  border: 1px solid blue;
+}
+.frame {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #000000;
+}

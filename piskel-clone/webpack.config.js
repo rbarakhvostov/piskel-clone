@@ -12,17 +12,12 @@ module.exports = {
     rules: [
       { enforce: 'pre', test: /\.js$/, loader: 'eslint-loader' },
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    template: 'index.html',
+  })],
 };
