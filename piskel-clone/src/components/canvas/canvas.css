@@ -1,7 +1,8 @@
 .canvas {
-  width: 500px;
-  height: 500px;
+  /* width: 640px;
+  height: 640px; */
   grid-area: canvas;
-
-  border: 1px solid #000;
+  cursor: pointer;
+  background-color: beige;
+  /* border: 1px solid #000; */
 }
