@@ -2,7 +2,7 @@ import renderHeader from './components/header/renderHeader';
 import renderMain from './components/main/renderMain';
 import selectTool from './utilities/selectTool';
 import applyTool from './utilities/applyTool';
-import addFrame from './utilities/newFrame/addFrame';
+import addFrame from './utilities/newFrame/renderFrame';
 import selectFrame from './utilities/selectFrame';
 
 function start() {

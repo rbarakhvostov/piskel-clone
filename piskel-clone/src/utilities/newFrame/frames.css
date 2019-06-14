@@ -1,0 +1,25 @@
+
+.inner-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+}
+.inner-wrap .frame-number {
+  position: static;
+}
+.delete-frame {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+}
+.delete-frame:hover {
+  color: #0cafb7;
+}
+.frame-wrapper:hover .delete-frame{
+  opacity: 1;
+}

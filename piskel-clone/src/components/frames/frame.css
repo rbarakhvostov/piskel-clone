@@ -1,0 +1,42 @@
+.frame-wrapper {
+  position: relative;
+  width: 132px;
+}
+.frame {
+  background-color: beige;
+  border: 2px solid #000000;
+}
+.selected-frame {
+  border: 2px solid #0cafb7;
+}
+.frame-number {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #0cafb7;
+  user-select: none;
+  font-weight: bold;
+}
+.frame-number:active {
+  opacity: 0;
+}
+.duplicate-frame {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 110px;
+  /* right: 35px; */
+  align-items: center;
+  opacity: 0;
+}
+.duplicate-frame:hover {
+  color: #0cafb7;
+}
+.frame-wrapper:hover .duplicate-frame{
+  opacity: 1;
+}

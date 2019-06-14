@@ -10,9 +10,9 @@
   font-size: 14px;
   font-weight: bold;
 }
-.frame-button:hover {
+.frames-button:hover {
   background-color: #0cafb730;
 }
-.frame-button:active {
+.frames-button:active {
   background-color: #0cafb7;
 }
