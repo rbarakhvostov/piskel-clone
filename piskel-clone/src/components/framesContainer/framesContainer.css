@@ -1,0 +1,10 @@
+.frames-container {
+  grid-area: frames-container;
+  align-self: start;
+  height: 540px;
+  overflow-y: auto;
+  cursor: pointer;
+
+   width: 165px;
+  /* border: 1px solid blue; */
+}

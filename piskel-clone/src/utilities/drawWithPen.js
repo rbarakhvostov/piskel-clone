@@ -1,3 +1,5 @@
+import frameMapping from './frameMapping';
+
 export default function drawWithPen() {
   const canvas = document.querySelector('.canvas');
   const context = canvas.getContext('2d');
@@ -23,6 +25,7 @@ export default function drawWithPen() {
   }
   function mouseupHandler() {
     paint = false;
+    frameMapping();
   }
   function mouseleaveHandler() {
     paint = false;

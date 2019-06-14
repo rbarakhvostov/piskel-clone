@@ -1,15 +1,28 @@
-.frames-container {
+/* .frames-container {
   grid-area: frames-container;
   align-self: start;
   height: 540px;
   overflow-y: auto;
   cursor: pointer;
 
-  width: 140px;
-  border: 1px solid blue;
-}
+   width: 140px;
+  /* border: 1px solid blue; 
+} */
+
 .frame {
-  width: 140px;
-  height: 140px;
+  background-color: beige;
   border: 2px solid #000000;
+  position: relative;
 }
+.selected-frame {
+  border: 2px solid #0cafb7;
+}
+.frame-number {
+  width: 15px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+

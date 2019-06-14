@@ -2,13 +2,19 @@ import renderHeader from './components/header/renderHeader';
 import renderMain from './components/main/renderMain';
 import selectTool from './utilities/selectTool';
 import applyTool from './utilities/applyTool';
+import addFrame from './utilities/newFrame/addFrame';
+import selectFrame from './utilities/selectFrame';
 
 function start() {
   renderHeader();
   renderMain();
   const toolbar = document.querySelector('.toolbar');
   toolbar.addEventListener('click', selectTool);
+  const framesContainer = document.querySelector('.frames-container');
+  framesContainer.addEventListener('click', selectFrame);
   toolbar.addEventListener('click', applyTool);
+  const framesButton = document.querySelector('.frames-button');
+  framesButton.addEventListener('click', addFrame);
 }
 
 start();
