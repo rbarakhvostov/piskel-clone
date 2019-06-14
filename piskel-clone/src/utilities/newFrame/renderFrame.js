@@ -2,6 +2,7 @@ import replaceCanvas from '../replaceCanvas';
 import startDrawWithPen from '../startDrawWithPen';
 import './frames.css';
 import addNumber from '../addNumber';
+import deleteFrame from '../deleteFrame';
 
 export default function renderFrame() {
   const canvas = document.querySelector('.canvas');
@@ -13,11 +14,11 @@ export default function renderFrame() {
   }
   framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame"><span class="fas fa-copy"></span></div>');
   addNumber();
+  const frameWrappers = document.querySelectorAll('.frame-wrapper');
+  const frameWrappersLength = frameWrappers.length;
+  const frameWrapper = frameWrappers[frameWrappersLength - 1];
+  frameWrapper.addEventListener('click', deleteFrame);
   context.clearRect(0, 0, 640, 640);
   replaceCanvas();
-  // const pen = document.querySelector('.pen');
-  // if (pen.classList.contains('selected-tool')) {
-  //   drawWithPen();
-  // }
   startDrawWithPen();
 }
