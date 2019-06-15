@@ -32,12 +32,12 @@
   width: 20px;
   height: 20px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   opacity: 0;
   background-color: #0cafb7;
 }
-.duplicate-frame {
+.duplicate-frame-container {
   height: 20px;
   width: 20px;
   display: flex;
@@ -49,10 +49,10 @@
   background-color: #0cafb7;
 }
 .delete-frame-container:hover, 
-.duplicate-frame:hover {
+.duplicate-frame-container:hover {
   color: #0cafb7;
 }
 .frame-wrapper:hover .delete-frame-container,
-.frame-wrapper:hover .duplicate-frame{
+.frame-wrapper:hover .duplicate-frame-container{
   opacity: 1;
 }

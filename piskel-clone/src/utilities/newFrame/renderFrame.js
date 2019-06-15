@@ -2,6 +2,7 @@ import replaceCanvas from '../replaceCanvas';
 import startDrawWithPen from '../startDrawWithPen';
 import addNumber from '../addNumber';
 import deleteFrame from '../deleteFrame';
+import duplicateFrame from '../duplicateFrame';
 
 export default function renderFrame() {
   const canvas = document.querySelector('.canvas');
@@ -11,12 +12,13 @@ export default function renderFrame() {
   for (let i = 0, l = frames.length; i < l; i += 1) {
     frames[i].classList.remove('selected-frame');
   }
-  framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame-container"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame"><span class="fas fa-copy"></span></div>');
+  framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame-container"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame-container"><span class="fas fa-copy"></span></div>');
   addNumber();
   const frameWrappers = document.querySelectorAll('.frame-wrapper');
   const frameWrappersLength = frameWrappers.length;
   const frameWrapper = frameWrappers[frameWrappersLength - 1];
   frameWrapper.addEventListener('click', deleteFrame);
+  frameWrapper.addEventListener('click', duplicateFrame);
   context.clearRect(0, 0, 640, 640);
   replaceCanvas();
   startDrawWithPen();

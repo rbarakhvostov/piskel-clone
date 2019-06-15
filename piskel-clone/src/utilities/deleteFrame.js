@@ -1,4 +1,4 @@
-import changeFramesNumbers from './changeFramesNumbers';
+import changeFrameNumbers from './changeFrameNumbers';
 import replaceCanvas from './replaceCanvas';
 import startDrawWithPen from './startDrawWithPen';
 
@@ -15,13 +15,13 @@ export default function deleteFrame(e) {
       this.previousElementSibling.querySelector('.frame').classList.add('selected-frame');
       selectedFrame = this.previousElementSibling.querySelector('.selected-frame');
     } else if (this.querySelector('.frame').classList.contains('selected-frame')
-    && this === frameWrappers[0]) {
+        && this === frameWrappers[0]) {
       this.nextElementSibling.querySelector('.frame').classList.add('selected-frame');
       selectedFrame = this.nextElementSibling.querySelector('.selected-frame');
     }
     replaceCanvas(selectedFrame);
     startDrawWithPen();
     this.remove();
-    changeFramesNumbers();
+    changeFrameNumbers();
   }
 }
