@@ -1,21 +1,27 @@
-import changeFrameNumbers from './changeFrameNumbers';
+import changeFramesNumbers from './changeFramesNumbers';
 import replaceCanvas from './replaceCanvas';
 import startDrawWithPen from './startDrawWithPen';
 
-export default function deleteFrames(e) {
+export default function deleteFrame(e) {
   const { target } = e;
-  const frameWrappers = document.querySelectorAll('.frame-wrapper');
-  const frameWrappersLength = frameWrappers.length;
-  const deleteFrame = this.querySelector('.delete-frame');
+  const deleteFrameContainer = this.querySelector('.delete-frame-container');
   const deleteFrameIcon = this.querySelector('.fa-trash-alt');
-  if (target === deleteFrame || target === deleteFrameIcon) {
-    if (this === frameWrappers[frameWrappersLength - 1]) {
+  const frameWrappers = document.querySelectorAll('.frame-wrapper');
+  let selectedFrame;
+  if (frameWrappers.length === 1) return;
+  if (target === deleteFrameContainer || target === deleteFrameIcon) {
+    if (this.querySelector('.frame').classList.contains('selected-frame')
+        && this !== frameWrappers[0]) {
       this.previousElementSibling.querySelector('.frame').classList.add('selected-frame');
-      const selectedFrame = document.querySelector('.selected-frame');
-      replaceCanvas(selectedFrame);
-      startDrawWithPen();
+      selectedFrame = this.previousElementSibling.querySelector('.selected-frame');
+    } else if (this.querySelector('.frame').classList.contains('selected-frame')
+    && this === frameWrappers[0]) {
+      this.nextElementSibling.querySelector('.frame').classList.add('selected-frame');
+      selectedFrame = this.nextElementSibling.querySelector('.selected-frame');
     }
+    replaceCanvas(selectedFrame);
+    startDrawWithPen();
     this.remove();
-    changeFrameNumbers();
+    changeFramesNumbers();
   }
 }

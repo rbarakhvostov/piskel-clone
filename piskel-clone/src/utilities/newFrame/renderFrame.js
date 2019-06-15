@@ -1,6 +1,5 @@
 import replaceCanvas from '../replaceCanvas';
 import startDrawWithPen from '../startDrawWithPen';
-import './frames.css';
 import addNumber from '../addNumber';
 import deleteFrame from '../deleteFrame';
 
@@ -12,7 +11,7 @@ export default function renderFrame() {
   for (let i = 0, l = frames.length; i < l; i += 1) {
     frames[i].classList.remove('selected-frame');
   }
-  framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame"><span class="fas fa-copy"></span></div>');
+  framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame-container"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame"><span class="fas fa-copy"></span></div>');
   addNumber();
   const frameWrappers = document.querySelectorAll('.frame-wrapper');
   const frameWrappersLength = frameWrappers.length;
