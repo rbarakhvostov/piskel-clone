@@ -1,6 +1,6 @@
 import './preview.css';
 
 export default function renderPreview() {
-  const main = document.querySelector('.main');
-  main.insertAdjacentHTML('beforeEnd', '<div class="preview"></div>');
+  const previewContainer = document.querySelector('.preview-container');
+  previewContainer.insertAdjacentHTML('beforeEnd', '<canvas class="preview" width="256" height="256"></canvas>');
 }

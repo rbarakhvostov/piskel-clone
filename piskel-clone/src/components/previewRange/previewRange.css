@@ -1,0 +1,14 @@
+/* .preview-range-container {
+  display: flex;
+} */
+.label-preview-range {
+  /* margin: 3px 5px 0 0; */
+  font-weight: bold;
+}
+.preview-range {
+  outline: none;
+}
+.range-value {
+  /* margin: 3px 0 0 5px; */
+  font-weight: bold;
+}

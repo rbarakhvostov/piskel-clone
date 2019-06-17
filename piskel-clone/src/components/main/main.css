@@ -1,8 +1,8 @@
 .main {
   display: grid;
   grid-template-areas: 
-    "toolbar frames-container canvas preview"
-    "palette frames-container canvas preview";
+    "toolbar frames-container canvas preview-container"
+    "palette frames-container canvas preview-container";
   /* grid-column-gap: 30px; */
   align-items: center;
   justify-items: center;

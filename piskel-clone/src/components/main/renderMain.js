@@ -3,7 +3,7 @@ import renderToolbar from '../toolbar/renderToolbar';
 import renderPalette from '../palette/renderPalette';
 import renderFramesContainer from '../framesContainer/renderFramesContainer';
 import renderCanvas from '../canvas/renderCanvas';
-import renderPreview from '../preview/renderPreview';
+import renderPreviewContainer from '../previewContainer/renderPreviewContainer';
 
 
 export default function renderMain() {
@@ -13,5 +13,5 @@ export default function renderMain() {
   renderPalette();
   renderFramesContainer();
   renderCanvas();
-  renderPreview();
+  renderPreviewContainer();
 }
