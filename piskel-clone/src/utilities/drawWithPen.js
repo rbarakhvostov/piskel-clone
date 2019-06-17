@@ -7,8 +7,10 @@ export default function drawWithPen() {
   const pixelSize = canvas.width / unitsNumber;
   let paint;
   function draw(x, y) {
-    context.rect(x, y, pixelSize, pixelSize);
-    context.fill();
+    const primaryColor = document.querySelector('.primary-color');
+    // context.rect(x, y, pixelSize, pixelSize);
+    context.fillStyle = primaryColor.value;
+    context.fillRect(x, y, pixelSize, pixelSize);
   }
   function mousedownHandler(e) {
     const mouseX = Math.floor((e.pageX - canvas.offsetLeft) / pixelSize) * pixelSize;
