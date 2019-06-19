@@ -1,5 +1,6 @@
 import replaceCanvas from './replaceCanvas';
 import startDrawWithPen from './startDrawWithPen';
+import startApplyEraser from './startApplyEraser';
 
 export default function selectFrame(e) {
   // const frames = document.querySelectorAll('.frame');
@@ -16,5 +17,6 @@ export default function selectFrame(e) {
     selectedFrame = document.querySelector('.selected-frame');
     replaceCanvas(selectedFrame);
     startDrawWithPen();
+    startApplyEraser();
   }
 }

@@ -2,6 +2,7 @@ import changeFrameNumbers from './changeFrameNumbers';
 import replaceCanvas from './replaceCanvas';
 import startDrawWithPen from './startDrawWithPen';
 import deleteFrame from './deleteFrame';
+import startApplyEraser from './startApplyEraser';
 
 export default function duplicateFrame(e) {
   const { target } = e;
@@ -22,5 +23,6 @@ export default function duplicateFrame(e) {
     changeFrameNumbers();
     replaceCanvas(frameCopy);
     startDrawWithPen();
+    startApplyEraser();
   }
 }
