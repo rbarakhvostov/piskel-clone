@@ -6,6 +6,7 @@ import addFrame from './utilities/newFrame/renderFrame';
 import selectFrame from './utilities/selectFrame';
 import startDrawWithPen from './utilities/startDrawWithPen';
 import startPreview from './utilities/preview';
+import requestFullscreen from './utilities/requestFullscreen';
 
 function start() {
   renderHeader();
@@ -20,6 +21,7 @@ function start() {
   framesButton.addEventListener('click', addFrame);
 
   document.querySelector('.preview-button').addEventListener('click', startPreview);
+  document.querySelector('.preview-fullscreen').addEventListener('click', requestFullscreen);
 }
 
 start();
