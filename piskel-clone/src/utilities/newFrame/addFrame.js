@@ -4,7 +4,7 @@ import addNumber from '../addNumber';
 import deleteFrame from '../deleteFrame';
 import duplicateFrame from '../duplicateFrame';
 
-export default function renderFrame() {
+export default function addFrame() {
   const canvas = document.querySelector('.canvas');
   const context = canvas.getContext('2d');
   const framesButton = document.querySelector('.frames-button');
@@ -13,6 +13,9 @@ export default function renderFrame() {
     frames[i].classList.remove('selected-frame');
   }
   framesButton.insertAdjacentHTML('beforeBegin', '<div class="frame-wrapper"><div class="inner-wrap"><div class="frame-number-container"><span class="frame-number"></span></div><div class="delete-frame-container"><span class="fas fa-trash-alt"></span></div></div><canvas class="frame selected-frame" width="128" height="128"></canvas><div class="duplicate-frame-container"><span class="fas fa-copy"></span></div>');
+  const selectedFrame = document.querySelector('.selected-frame');
+  const canvasColor = document.querySelector('.canvas-color');
+  selectedFrame.style.backgroundColor = canvasColor.value;
   addNumber();
   const frameWrappers = document.querySelectorAll('.frame-wrapper');
   const frameWrappersLength = frameWrappers.length;

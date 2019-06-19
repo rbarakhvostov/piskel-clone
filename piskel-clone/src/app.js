@@ -2,11 +2,12 @@ import renderHeader from './components/header/renderHeader';
 import renderMain from './components/main/renderMain';
 import selectTool from './utilities/selectTool';
 import applyTool from './utilities/applyTool';
-import addFrame from './utilities/newFrame/renderFrame';
+import addFrame from './utilities/newFrame/addFrame';
 import selectFrame from './utilities/selectFrame';
 import startDrawWithPen from './utilities/startDrawWithPen';
 import startPreview from './utilities/preview';
 import requestFullscreen from './utilities/requestFullscreen';
+import chooseCanvasColor from './utilities/chooseCanvasColor';
 
 function start() {
   renderHeader();
@@ -22,6 +23,7 @@ function start() {
 
   document.querySelector('.preview-button').addEventListener('click', startPreview);
   document.querySelector('.preview-fullscreen').addEventListener('click', requestFullscreen);
+  document.querySelector('.canvas-color').addEventListener('input', chooseCanvasColor);
 }
 
 start();

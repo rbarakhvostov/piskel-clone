@@ -21,7 +21,6 @@ export default function applyEraser() {
       const mouseX = Math.floor((e.pageX - canvas.offsetLeft) / pixelSize) * pixelSize;
       const mouseY = Math.floor((e.pageY - canvas.offsetTop) / pixelSize) * pixelSize;
       draw(mouseX, mouseY);
-      console.log(111);
     }
   }
   function mouseupHandler() {

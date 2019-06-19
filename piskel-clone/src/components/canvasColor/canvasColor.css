@@ -1,0 +1,6 @@
+.canvas-color {
+  background-color: #ffffff;
+  grid-area: canvas-color;
+  width: 30px;
+  height: 30px;
+}
