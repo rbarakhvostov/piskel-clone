@@ -1,4 +1,5 @@
 import frameMapping from './frameMapping';
+import chooseCanvasColor from './chooseCanvasColor';
 
 export default function applyEraser() {
   const canvas = document.querySelector('.canvas');
@@ -34,4 +35,9 @@ export default function applyEraser() {
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
   canvas.addEventListener('mouseleave', mouseleaveHandler);
+
+  const canvasColor = document.querySelector('.canvas-color');
+  canvasColor.setAttribute('disabled', 'disabled');
+  canvasColor.style.backgroundColor = '#ff0000';
+  canvasColor.removeEventListener('input', chooseCanvasColor);
 }
