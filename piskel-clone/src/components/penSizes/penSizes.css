@@ -1,0 +1,40 @@
+.pen-sizes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0 5px 0;
+}
+.pen-size {
+  position: absolute;
+  left: -2000px;
+}
+.pen-size-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #000000;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.pen-size-label:hover {
+  background-color: #0cafb730;
+}
+.pen-size-label div {
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+.pen-size-1-label div {
+  width: 5px;
+  height: 5px;
+}
+.pen-size-2-label div {
+  width: 10px;
+  height: 10px;
+}
+.pen-size-3-label div {
+  width: 15px;
+  height: 15px;
+}

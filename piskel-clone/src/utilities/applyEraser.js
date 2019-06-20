@@ -4,7 +4,7 @@ import chooseCanvasColor from './chooseCanvasColor';
 export default function applyEraser() {
   const canvas = document.querySelector('.canvas');
   const context = canvas.getContext('2d');
-  const unitsNumber = 64;
+  const unitsNumber = document.querySelector('.pen-sizes').elements['pen-size'].value;
   const pixelSize = canvas.width / unitsNumber;
   let paint;
   function draw(x, y) {
