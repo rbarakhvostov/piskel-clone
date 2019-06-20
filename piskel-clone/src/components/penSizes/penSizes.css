@@ -26,15 +26,18 @@
   border: 1px solid #000000;
   background-color: #000000;
 }
-.pen-size-1-label div {
+.pen-size-label-1 div {
   width: 5px;
   height: 5px;
 }
-.pen-size-2-label div {
+.pen-size-label-2 div {
   width: 10px;
   height: 10px;
 }
-.pen-size-3-label div {
+.pen-size-label-3 div {
   width: 15px;
   height: 15px;
+}
+.pen-size-label.selected-size {
+  background-color: #0cafb7;
 }
