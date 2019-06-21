@@ -3,6 +3,7 @@ import replaceCanvas from './replaceCanvas';
 import startDrawWithPen from './startDrawWithPen';
 import deleteFrame from './deleteFrame';
 import startApplyEraser from './startApplyEraser';
+import startApplyPaintBucket from './startApplyPaintBucket';
 
 export default function duplicateFrame(e) {
   const { target } = e;
@@ -24,5 +25,6 @@ export default function duplicateFrame(e) {
     replaceCanvas(frameCopy);
     startDrawWithPen();
     startApplyEraser();
+    startApplyPaintBucket();
   }
 }

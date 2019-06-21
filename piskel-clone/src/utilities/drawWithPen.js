@@ -37,5 +37,5 @@ export default function drawWithPen() {
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
   canvas.addEventListener('mouseleave', mouseleaveHandler);
-  canvas.addEventListener('contextmenu', e => e.preventDefault());
+  // canvas.addEventListener('contextmenu', e => e.preventDefault());
 }

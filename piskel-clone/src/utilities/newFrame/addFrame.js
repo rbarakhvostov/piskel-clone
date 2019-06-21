@@ -1,5 +1,6 @@
 import replaceCanvas from '../replaceCanvas';
 import startDrawWithPen from '../startDrawWithPen';
+import startApplyPaintBucket from '../startApplyPaintBucket';
 import addNumber from '../addNumber';
 import deleteFrame from '../deleteFrame';
 import duplicateFrame from '../duplicateFrame';
@@ -25,4 +26,5 @@ export default function addFrame() {
   context.clearRect(0, 0, 640, 640);
   replaceCanvas();
   startDrawWithPen();
+  startApplyPaintBucket();
 }

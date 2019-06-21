@@ -7,4 +7,5 @@ export default function replaceCanvas(...rest) {
   if (rest[0]) canvasCopyСontext.drawImage(rest[0], 0, 0, 640, 640);
   else canvasCopyСontext.drawImage(canvas, 0, 0);
   main.replaceChild(canvasCopy, canvas);
+  canvasCopy.addEventListener('contextmenu', e => e.preventDefault());
 }
