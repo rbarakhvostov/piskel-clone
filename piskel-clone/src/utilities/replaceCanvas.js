@@ -1,3 +1,9 @@
+import startDrawWithPen from './startDrawWithPen';
+import startApplyEraser from './startApplyEraser';
+import startApplyPaintBucket from './startApplyPaintBucket';
+import startApplyColorPicker from './startApplyColorPicker';
+import startDrawRectangle from './startDrawRectangle';
+
 export default function replaceCanvas(...rest) {
   const canvas = document.querySelector('.canvas');
   const main = document.querySelector('.main');
@@ -8,4 +14,9 @@ export default function replaceCanvas(...rest) {
   else canvasCopyСontext.drawImage(canvas, 0, 0);
   main.replaceChild(canvasCopy, canvas);
   canvasCopy.addEventListener('contextmenu', e => e.preventDefault());
+  startDrawWithPen();
+  startApplyEraser();
+  startApplyPaintBucket();
+  startApplyColorPicker();
+  startDrawRectangle();
 }

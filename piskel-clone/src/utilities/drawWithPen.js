@@ -30,12 +30,12 @@ export default function drawWithPen() {
     paint = false;
     frameMapping();
   }
-  function mouseleaveHandler() {
-    paint = false;
-  }
+  // function mouseleaveHandler() {
+  //   paint = false;
+  // }
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
-  canvas.addEventListener('mouseleave', mouseleaveHandler);
+  // canvas.addEventListener('mouseleave', mouseleaveHandler);
   // canvas.addEventListener('contextmenu', e => e.preventDefault());
 }

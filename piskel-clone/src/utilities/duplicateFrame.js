@@ -1,9 +1,10 @@
 import changeFrameNumbers from './changeFrameNumbers';
 import replaceCanvas from './replaceCanvas';
-import startDrawWithPen from './startDrawWithPen';
+// import startDrawWithPen from './startDrawWithPen';
 import deleteFrame from './deleteFrame';
-import startApplyEraser from './startApplyEraser';
-import startApplyPaintBucket from './startApplyPaintBucket';
+// import startApplyEraser from './startApplyEraser';
+// import startApplyPaintBucket from './startApplyPaintBucket';
+// import startApplyColorPicker from './startApplyColorPicker';
 
 export default function duplicateFrame(e) {
   const { target } = e;
@@ -23,8 +24,9 @@ export default function duplicateFrame(e) {
     this.insertAdjacentElement('afterEnd', frameWrapperCopy);
     changeFrameNumbers();
     replaceCanvas(frameCopy);
-    startDrawWithPen();
-    startApplyEraser();
-    startApplyPaintBucket();
+    // startDrawWithPen();
+    // startApplyEraser();
+    // startApplyPaintBucket();
+    // startApplyColorPicker();
   }
 }

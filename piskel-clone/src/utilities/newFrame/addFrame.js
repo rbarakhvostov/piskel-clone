@@ -1,9 +1,10 @@
 import replaceCanvas from '../replaceCanvas';
-import startDrawWithPen from '../startDrawWithPen';
-import startApplyPaintBucket from '../startApplyPaintBucket';
+// import startDrawWithPen from '../startDrawWithPen';
+// import startApplyPaintBucket from '../startApplyPaintBucket';
 import addNumber from '../addNumber';
 import deleteFrame from '../deleteFrame';
 import duplicateFrame from '../duplicateFrame';
+// import startApplyColorPicker from '../startApplyColorPicker';
 
 export default function addFrame() {
   const canvas = document.querySelector('.canvas');
@@ -25,6 +26,7 @@ export default function addFrame() {
   frameWrapper.addEventListener('click', duplicateFrame);
   context.clearRect(0, 0, 640, 640);
   replaceCanvas();
-  startDrawWithPen();
-  startApplyPaintBucket();
+  // startDrawWithPen();
+  // startApplyPaintBucket();
+  // startApplyColorPicker();
 }

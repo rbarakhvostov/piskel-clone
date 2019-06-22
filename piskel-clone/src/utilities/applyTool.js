@@ -1,17 +1,17 @@
 
 import replaceCanvas from './replaceCanvas';
-import startDrawWithPen from './startDrawWithPen';
-import startApplyEraser from './startApplyEraser';
-import startApplyPaintBucket from './startApplyPaintBucket';
-import startApplyColorPicker from './startApplyColorPicker';
+// import startDrawWithPen from './startDrawWithPen';
+// import startApplyEraser from './startApplyEraser';
+// import startApplyPaintBucket from './startApplyPaintBucket';
+// import startApplyColorPicker from './startApplyColorPicker';
+// import startDrawRectangle from './startDrawRectangle';
 
 export default function applyTool(e) {
   const { target } = e;
-  // const pen = document.querySelector('.pen');
-  // const eraser = document.querySelector('.eraser');
   if (target !== this) replaceCanvas();
-  startDrawWithPen();
-  startApplyEraser();
-  startApplyPaintBucket();
-  startApplyColorPicker();
+  // startDrawWithPen();
+  // startApplyEraser();
+  // startApplyPaintBucket();
+  // startApplyColorPicker();
+  // startDrawRectangle();
 }
