@@ -1,5 +1,4 @@
 import frameMapping from './frameMapping';
-// import chooseCanvasColor from './chooseCanvasColor';
 
 export default function applyEraser() {
   const canvas = document.querySelector('.canvas');
@@ -8,7 +7,8 @@ export default function applyEraser() {
   const pixelSize = canvas.width / unitsNumber;
   let paint;
   function draw(x, y) {
-    context.fillStyle = getComputedStyle(canvas).backgroundColor;
+    context.globalCompositeOperation = 'destination-out';
+    context.fillStyle = 'rgba(255,255,255,1)';
     context.fillRect(x, y, pixelSize, pixelSize);
   }
   function mousedownHandler(e) {
@@ -28,16 +28,11 @@ export default function applyEraser() {
     paint = false;
     frameMapping();
   }
-  function mouseleaveHandler() {
-    paint = false;
-  }
+  // function mouseleaveHandler() {
+  //   paint = false;
+  // }
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
-  canvas.addEventListener('mouseleave', mouseleaveHandler);
-
-  const canvasColor = document.querySelector('.canvas-color');
-  canvasColor.setAttribute('disabled', 'disabled');
-  canvasColor.style.backgroundColor = '#ff0000';
-  // canvasColor.removeEventListener('input', chooseCanvasColor);
+  // canvas.addEventListener('mouseleave', mouseleaveHandler);
 }

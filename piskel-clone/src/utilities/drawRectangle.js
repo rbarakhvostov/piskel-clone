@@ -8,9 +8,11 @@ export default function drawRectangle() {
   const unitsNumber = document.querySelector('.pen-sizes').elements['pen-size'].value;
   const pixel = canvas.width / unitsNumber;
   const offset = pixel / 2;
-  function draw() {
+  function draw(button) {
     const primaryColor = document.querySelector('.primary-color');
-    context.strokeStyle = primaryColor.value;
+    const secondaryColor = document.querySelector('.secondary-color');
+    if (button === 1) context.strokeStyle = primaryColor.value;
+    if (button === 3) context.strokeStyle = secondaryColor.value;
     context.lineWidth = pixel;
     context.strokeRect(rect.startX, rect.startY, rect.w, rect.h);
   }
@@ -28,7 +30,7 @@ export default function drawRectangle() {
       rect.h = Math.floor((e.pageY - canvas.offsetTop) / pixel) * pixel - rect.startY + offset;
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(selectedFrame, 0, 0, 640, 640);
-      draw();
+      draw(e.which);
     }
   }
 
