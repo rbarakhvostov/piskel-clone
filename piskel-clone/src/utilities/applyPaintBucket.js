@@ -16,18 +16,16 @@ export default function applyPaintBucket() {
   }
   function colorPixel(data, pos, color) {
     const copyData = data;
-    copyData[pos] = color.r || 0;
-    copyData[pos + 1] = color.g || 0;
-    copyData[pos + 2] = color.b || 0;
-    // copyData[pos + 3] = color.a ? color.a : 255;
-    copyData[pos + 3] = Object.prototype.hasOwnProperty.call(color, 'a') ? color.a : 255;
-    // copyData[pos + 3] = Object.prototype.hasOwnProperty.call(color, 'a');
+    copyData[pos] = color.r; // || 0;
+    copyData[pos + 1] = color.g; // || 0;
+    copyData[pos + 2] = color.b; // || 0;
+    // copyData[pos + 3] = Object.prototype.hasOwnProperty.call(color, 'a') ? color.a : 255;
+    copyData[pos + 3] = 255;
   }
 
   function floodFill(startX, startY, fillColor) {
     const srcImg = context.getImageData(0, 0, canvas.width, canvas.height);
     const srcData = srcImg.data;
-
     const startPos = getPixelPos(startX, startY);
     const startColor = {
       r: srcData[startPos],

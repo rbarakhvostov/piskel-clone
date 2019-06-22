@@ -4,6 +4,8 @@ import renderEraser from '../tools/eraser/renderEraser';
 import renderPaintBucket from '../tools/paint-bucket/renderPaintBucket';
 import renderRectangle from '../tools/rectangle/renderRectangle';
 import renderPenSizes from '../penSizes/renderPenSizes';
+import renderColorPicker from '../tools/colorPicker/renderColorPicker';
+
 
 export default function renderToolbar() {
   const main = document.querySelector('.main');
@@ -13,4 +15,5 @@ export default function renderToolbar() {
   renderEraser();
   renderPaintBucket();
   renderRectangle();
+  renderColorPicker();
 }

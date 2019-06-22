@@ -1,5 +1,5 @@
 import frameMapping from './frameMapping';
-import chooseCanvasColor from './chooseCanvasColor';
+// import chooseCanvasColor from './chooseCanvasColor';
 
 export default function applyEraser() {
   const canvas = document.querySelector('.canvas');
@@ -39,5 +39,5 @@ export default function applyEraser() {
   const canvasColor = document.querySelector('.canvas-color');
   canvasColor.setAttribute('disabled', 'disabled');
   canvasColor.style.backgroundColor = '#ff0000';
-  canvasColor.removeEventListener('input', chooseCanvasColor);
+  // canvasColor.removeEventListener('input', chooseCanvasColor);
 }
