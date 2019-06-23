@@ -1,4 +1,3 @@
-
 import replaceCanvas from './replaceCanvas';
 // import startDrawWithPen from './startDrawWithPen';
 // import startApplyEraser from './startApplyEraser';
@@ -9,6 +8,7 @@ import replaceCanvas from './replaceCanvas';
 export default function applyTool(e) {
   const { target } = e;
   if (target !== this) replaceCanvas();
+  console.log('applyTool');
   // startDrawWithPen();
   // startApplyEraser();
   // startApplyPaintBucket();

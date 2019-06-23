@@ -1,0 +1,13 @@
+.info {
+  grid-area: info;
+  font-size: 14px;
+  width: 100px;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+/* .canvas-size, .cursor-coordinates {
+  border: 1px solid #000;
+} */
+.canvas-size {
+  margin-right: 10px;
+}

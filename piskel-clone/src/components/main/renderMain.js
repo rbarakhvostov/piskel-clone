@@ -5,6 +5,7 @@ import renderFramesContainer from '../framesContainer/renderFramesContainer';
 import renderCanvas from '../canvas/renderCanvas';
 import renderPreviewContainer from '../previewContainer/renderPreviewContainer';
 import renderCanvasColor from '../canvasColor/canvasColor';
+import renderInfo from '../info/renderInfo';
 
 export default function renderMain() {
   const header = document.querySelector('.header');
@@ -15,4 +16,5 @@ export default function renderMain() {
   renderFramesContainer();
   renderCanvas();
   renderPreviewContainer();
+  renderInfo();
 }

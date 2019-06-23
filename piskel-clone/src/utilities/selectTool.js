@@ -1,13 +1,9 @@
 export default function selectTool(e) {
   let { target } = e;
+  const selectedTool = document.querySelector('.selected-tool');
   while (target !== this) {
-    if (target.tagName === 'BUTTON') {
-      // for (let i = 0, l = this.children.length; i < l; i += 1) {
-      //   if (this.children[i].classList.contains('selected-tool')) {
-      //     this.children[i].classList.remove('selected-tool');
-      //   }
-      // }
-      const selectedTool = document.querySelector('.selected-tool');
+    if (target.tagName === 'BUTTON' && target !== selectedTool) {
+      // const selectedTool = document.querySelector('.selected-tool');
       selectedTool.classList.remove('selected-tool');
       target.classList.add('selected-tool');
       return;

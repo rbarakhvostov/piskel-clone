@@ -1,6 +1,6 @@
 import changeFrameNumbers from './changeFrameNumbers';
 import replaceCanvas from './replaceCanvas';
-import startDrawWithPen from './startDrawWithPen';
+// import startDrawWithPen from './startDrawWithPen';
 
 export default function deleteFrame(e) {
   const { target } = e;
@@ -20,7 +20,7 @@ export default function deleteFrame(e) {
       selectedFrame = this.nextElementSibling.querySelector('.selected-frame');
     }
     replaceCanvas(selectedFrame);
-    startDrawWithPen();
+    // startDrawWithPen();
     this.remove();
     changeFrameNumbers();
   }

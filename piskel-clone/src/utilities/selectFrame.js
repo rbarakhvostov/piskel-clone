@@ -4,8 +4,9 @@ import replaceCanvas from './replaceCanvas';
 
 export default function selectFrame(e) {
   const { target } = e;
-  if (target.tagName === 'CANVAS') {
-    let selectedFrame = document.querySelector('.selected-frame');
+  let selectedFrame = document.querySelector('.selected-frame');
+  // const innerWrap = document.querySelector('.inner-wrap');
+  if (target.tagName === 'CANVAS' && target !== selectedFrame) {
     selectedFrame.classList.remove('selected-frame');
     target.classList.add('selected-frame');
     selectedFrame = document.querySelector('.selected-frame');

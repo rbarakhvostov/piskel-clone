@@ -8,10 +8,12 @@ import startDrawWithPen from './utilities/startDrawWithPen';
 import startPreview from './utilities/preview';
 import requestFullscreen from './utilities/requestFullscreen';
 import chooseCanvasColor from './utilities/chooseCanvasColor';
+import startShowInfo from './utilities/startShowInfo';
 
 function start() {
   renderHeader();
   renderMain();
+  startShowInfo();
   startDrawWithPen();
   const toolbar = document.querySelector('.toolbar');
   toolbar.addEventListener('click', selectTool);
@@ -24,6 +26,8 @@ function start() {
   document.querySelector('.preview-button').addEventListener('click', startPreview);
   document.querySelector('.preview-fullscreen').addEventListener('click', requestFullscreen);
   document.querySelector('.canvas-color').addEventListener('input', chooseCanvasColor);
+
+  // document.querySelector('.canvas').addEventListener('mousemove', showInfo);
 }
 
 start();
