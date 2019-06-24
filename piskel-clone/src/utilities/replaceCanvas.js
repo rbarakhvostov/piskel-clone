@@ -7,6 +7,7 @@ import startApplyLighten from './startApplyLighten';
 import startApplyDarken from './startApplyDarken';
 import startShowInfo from './startShowInfo';
 import startApplyDitheringTool from './startApplyDitheringTool';
+import startApplyInversionTool from './startApplyInversionTool';
 
 export default function replaceCanvas(...rest) {
   const canvas = document.querySelector('.canvas');
@@ -27,4 +28,5 @@ export default function replaceCanvas(...rest) {
   startApplyLighten();
   startApplyDarken();
   startApplyDitheringTool();
+  startApplyInversionTool();
 }
