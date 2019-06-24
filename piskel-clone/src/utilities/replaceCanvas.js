@@ -6,6 +6,7 @@ import startDrawRectangle from './startDrawRectangle';
 import startApplyLighten from './startApplyLighten';
 import startApplyDarken from './startApplyDarken';
 import startShowInfo from './startShowInfo';
+import startApplyDitheringTool from './startApplyDitheringTool';
 
 export default function replaceCanvas(...rest) {
   const canvas = document.querySelector('.canvas');
@@ -25,4 +26,5 @@ export default function replaceCanvas(...rest) {
   startDrawRectangle();
   startApplyLighten();
   startApplyDarken();
+  startApplyDitheringTool();
 }
