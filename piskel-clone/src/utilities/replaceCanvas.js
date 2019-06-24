@@ -3,6 +3,7 @@ import startApplyEraser from './startApplyEraser';
 import startApplyPaintBucket from './startApplyPaintBucket';
 import startApplyColorPicker from './startApplyColorPicker';
 import startDrawRectangle from './startDrawRectangle';
+import startApplyLighten from './startApplyLighten';
 import startShowInfo from './startShowInfo';
 
 export default function replaceCanvas(...rest) {
@@ -21,4 +22,5 @@ export default function replaceCanvas(...rest) {
   startApplyPaintBucket();
   startApplyColorPicker();
   startDrawRectangle();
+  startApplyLighten();
 }

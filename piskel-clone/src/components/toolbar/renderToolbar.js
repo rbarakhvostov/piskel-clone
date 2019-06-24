@@ -5,6 +5,7 @@ import renderPaintBucket from '../tools/paint-bucket/renderPaintBucket';
 import renderRectangle from '../tools/rectangle/renderRectangle';
 import renderPenSizes from '../penSizes/renderPenSizes';
 import renderColorPicker from '../tools/colorPicker/renderColorPicker';
+import renderLighten from '../tools/lighten/renderLighten';
 
 
 export default function renderToolbar() {
@@ -16,4 +17,5 @@ export default function renderToolbar() {
   renderPaintBucket();
   renderRectangle();
   renderColorPicker();
+  renderLighten();
 }
