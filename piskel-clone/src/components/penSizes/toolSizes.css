@@ -1,15 +1,15 @@
-.pen-sizes {
+.tool-sizes {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5px 0 5px 0;
 }
-.pen-size {
+.tool-size {
   position: absolute;
   left: -2000px;
 }
-.pen-size-label {
+.tool-size-label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,25 +19,25 @@
   height: 20px;
   cursor: pointer;
 }
-.pen-size-label:hover {
+.tool-size-label:hover {
   background-color: #0cafb730;
 }
-.pen-size-label div {
+.tool-size-label div {
   border: 1px solid #000000;
   background-color: #000000;
 }
-.pen-size-label-1 div {
+.tool-size-label-1 div {
   width: 5px;
   height: 5px;
 }
-.pen-size-label-2 div {
+.tool-size-label-2 div {
   width: 10px;
   height: 10px;
 }
-.pen-size-label-3 div {
+.tool-size-label-3 div {
   width: 15px;
   height: 15px;
 }
-.pen-size-label.selected-size {
+.tool-size-label.selected-size {
   background-color: #0cafb7;
 }

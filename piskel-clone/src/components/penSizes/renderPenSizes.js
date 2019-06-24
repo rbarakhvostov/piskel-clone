@@ -1,8 +1,8 @@
-import './penSizes.css';
-import selectPenSize from '../../utilities/selectPenSize';
+import './toolSizes.css';
+import selectToolSize from '../../utilities/selectToolSize';
 
-export default function renderPenSizes() {
+export default function renderToolSizes() {
   const toolbar = document.querySelector('.toolbar');
-  toolbar.insertAdjacentHTML('beforeEnd', '<form class="pen-sizes"><input class="pen-size" value="128" type="radio" name="pen-size" id="pen-size-1"><label class="pen-size-label pen-size-label-1" for="pen-size-1"><div></div></label><input class="pen-size" value="64" type="radio" name="pen-size" id="pen-size-2" checked><label class="pen-size-label pen-size-label-2 selected-size" for="pen-size-2"><div></div></label><input class="pen-size" value="32" type="radio" name="pen-size" id="pen-size-3"><label class="pen-size-label pen-size-label-3" for="pen-size-3"><div></div></label></form>');
-  document.querySelector('.pen-sizes').addEventListener('click', selectPenSize);
+  toolbar.insertAdjacentHTML('beforeEnd', '<form class="tool-sizes"><input class="tool-size" value="128" type="radio" name="tool-size" id="tool-size-1"><label class="tool-size-label tool-size-label-1" for="tool-size-1"><div></div></label><input class="tool-size" value="64" type="radio" name="tool-size" id="tool-size-2" checked><label class="tool-size-label tool-size-label-2 selected-size" for="tool-size-2"><div></div></label><input class="tool-size" value="32" type="radio" name="tool-size" id="tool-size-3"><label class="tool-size-label tool-size-label-3" for="tool-size-3"><div></div></label></form>');
+  document.querySelector('.tool-sizes').addEventListener('click', selectToolSize);
 }

@@ -3,7 +3,8 @@ import frameMapping from './frameMapping';
 export default function applyEraser() {
   const canvas = document.querySelector('.canvas');
   const context = canvas.getContext('2d');
-  const unitsNumber = document.querySelector('.pen-sizes').elements['pen-size'].value;
+  const toolSize = document.querySelector('.tool-sizes');
+  const unitsNumber = toolSize.elements['tool-size'].value;
   const pixelSize = canvas.width / unitsNumber;
   let paint;
   function draw(x, y) {

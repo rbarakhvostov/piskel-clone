@@ -4,6 +4,7 @@ import startApplyPaintBucket from './startApplyPaintBucket';
 import startApplyColorPicker from './startApplyColorPicker';
 import startDrawRectangle from './startDrawRectangle';
 import startApplyLighten from './startApplyLighten';
+import startApplyDarken from './startApplyDarken';
 import startShowInfo from './startShowInfo';
 
 export default function replaceCanvas(...rest) {
@@ -23,4 +24,5 @@ export default function replaceCanvas(...rest) {
   startApplyColorPicker();
   startDrawRectangle();
   startApplyLighten();
+  startApplyDarken();
 }

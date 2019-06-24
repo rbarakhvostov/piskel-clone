@@ -1,4 +1,4 @@
-export default function selectPenSize(e) {
+export default function selectToolSize(e) {
   let { target } = e;
   const selectedSize = document.querySelector('.selected-size');
   while (target !== this) {

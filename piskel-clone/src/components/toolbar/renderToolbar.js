@@ -6,7 +6,7 @@ import renderRectangle from '../tools/rectangle/renderRectangle';
 import renderPenSizes from '../penSizes/renderPenSizes';
 import renderColorPicker from '../tools/colorPicker/renderColorPicker';
 import renderLighten from '../tools/lighten/renderLighten';
-
+import renderDarken from '../tools/darken/renderDarken';
 
 export default function renderToolbar() {
   const main = document.querySelector('.main');
@@ -18,4 +18,5 @@ export default function renderToolbar() {
   renderRectangle();
   renderColorPicker();
   renderLighten();
+  renderDarken();
 }

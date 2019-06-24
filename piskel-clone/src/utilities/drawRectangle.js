@@ -5,7 +5,8 @@ export default function drawRectangle() {
   const context = canvas.getContext('2d');
   const rect = {};
   let drag;
-  const unitsNumber = document.querySelector('.pen-sizes').elements['pen-size'].value;
+  const toolSize = document.querySelector('.tool-sizes');
+  const unitsNumber = toolSize.elements['tool-size'].value;
   const pixel = canvas.width / unitsNumber;
   const offset = pixel / 2;
   function draw(button) {
