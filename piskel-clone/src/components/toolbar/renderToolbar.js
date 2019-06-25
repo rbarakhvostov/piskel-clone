@@ -9,6 +9,7 @@ import renderLighten from '../tools/lighten/renderLighten';
 import renderDarken from '../tools/darken/renderDarken';
 import renderDitheringTool from '../tools/ditheringTool/renderDitheringTool';
 import renderInversionTool from '../tools/inversion/renderInversionTool';
+import renderMirrorPenTool from '../tools/mirrorPen/renderMirrorPenTool';
 
 export default function renderToolbar() {
   const main = document.querySelector('.main');
@@ -23,4 +24,5 @@ export default function renderToolbar() {
   renderDarken();
   renderDitheringTool();
   renderInversionTool();
+  renderMirrorPenTool();
 }
