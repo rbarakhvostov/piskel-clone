@@ -11,7 +11,7 @@ export default function deleteFrame(e) {
   if (frameWrappers.length === 1) return;
   if (target === deleteFrameContainer || target === deleteFrameIcon) {
     if (this.querySelector('.frame').classList.contains('selected-frame')
-        && this !== frameWrappers[0]) {
+        && this !== frameWrappers[0]) { // this !== frameWrappers[0] ??????????????????????????????
       this.previousElementSibling.querySelector('.frame').classList.add('selected-frame');
       selectedFrame = this.previousElementSibling.querySelector('.selected-frame');
     } else if (this.querySelector('.frame').classList.contains('selected-frame')

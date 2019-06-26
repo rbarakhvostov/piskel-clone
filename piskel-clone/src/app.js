@@ -5,15 +5,17 @@ import applyTool from './utilities/applyTool';
 import addFrame from './utilities/newFrame/addFrame';
 import selectFrame from './utilities/selectFrame';
 import startDrawWithPen from './utilities/startDrawWithPen';
-import startPreview from './utilities/preview';
+import startPreview from './utilities/startPreview';
 import requestFullscreen from './utilities/requestFullscreen';
 import chooseCanvasColor from './utilities/chooseCanvasColor';
 import startShowInfo from './utilities/startShowInfo';
+import assignShortcuts from './utilities/assignShortcuts';
 
 function start() {
   renderHeader();
   renderMain();
   startShowInfo();
+  assignShortcuts();
   startDrawWithPen();
   const toolbar = document.querySelector('.toolbar');
   toolbar.addEventListener('click', selectTool);
