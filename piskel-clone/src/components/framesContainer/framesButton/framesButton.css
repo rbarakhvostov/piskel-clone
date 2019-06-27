@@ -1,0 +1,18 @@
+.frames-button {
+  width: 132px;
+  height: 25px;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.frames-button:hover {
+  background-color: #0cafb730;
+}
+.frames-button:active {
+  background-color: #0cafb7;
+}

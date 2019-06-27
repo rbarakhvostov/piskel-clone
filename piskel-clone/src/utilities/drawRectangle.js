@@ -30,7 +30,7 @@ export default function drawRectangle() {
       rect.w = Math.floor((e.pageX - canvas.offsetLeft) / pixel) * pixel - rect.startX + offset;
       rect.h = Math.floor((e.pageY - canvas.offsetTop) / pixel) * pixel - rect.startY + offset;
       context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(selectedFrame, 0, 0, 640, 640);
+      context.drawImage(selectedFrame, 0, 0, canvas.width, canvas.height);
       draw(e.which);
     }
   }
@@ -39,12 +39,8 @@ export default function drawRectangle() {
     drag = false;
     frameMapping();
   }
-  // function mouseleaveHandler() {
-  //   drag = false;
-  // }
 
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
-  // canvas.addEventListener('mouseleave', mouseleaveHandler);
 }

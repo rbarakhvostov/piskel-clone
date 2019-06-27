@@ -9,7 +9,7 @@ import startShowInfo from './startShowInfo';
 import startApplyDitheringTool from './startApplyDitheringTool';
 import startApplyInversionTool from './startApplyInversionTool';
 import startApplyMirrorPenTool from './startApplyMirrorPenTool';
-import startApplyPaintSamePixels from './startApplyPaintSamePixels';
+import startApplyMagicPaint from './startApplyMagicPaint';
 
 export default function replaceCanvas(...rest) {
   const canvas = document.querySelector('.canvas');
@@ -32,5 +32,5 @@ export default function replaceCanvas(...rest) {
   startApplyDitheringTool();
   startApplyInversionTool();
   startApplyMirrorPenTool();
-  startApplyPaintSamePixels();
+  startApplyMagicPaint();
 }

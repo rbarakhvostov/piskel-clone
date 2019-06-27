@@ -1,8 +1,8 @@
-import drawWithPen from './drawWithPen';
+import applyPen from './applyPen';
 
 export default function startDrawWithPen() {
   const pen = document.querySelector('.pen');
   if (pen.classList.contains('selected-tool')) {
-    drawWithPen();
+    applyPen();
   }
 }

@@ -1,0 +1,45 @@
+import applyPenHotkey from './applyHotkeys/applyPenHotkey';
+import applyMirrorPenHotkey from './applyHotkeys/applyMirrorPenHotkey';
+import applyEraserHotkey from './applyHotkeys/applyEraserHotkey';
+import applyPaintBucketHotkey from './applyHotkeys/applyPaintBucketHotkey';
+import applyColorPickerHotkey from './applyHotkeys/applyColorPickerHotkey';
+import applyDitheringToolHotkey from './applyHotkeys/applyDitheringToolHotkey';
+import applyInversionToolHotkey from './applyHotkeys/applyInversionToolHotkey';
+import applyRectangleHotkey from './applyHotkeys/applyRectangleHotkey';
+import applyLightenHotkey from './applyHotkeys/applyLightenHotkey';
+import applyDarkenHotkey from './applyHotkeys/applyDarkenHotkey';
+import applyMagicPaintHotkey from './applyHotkeys/applyMagicPaintHotkey';
+import applySwapColorsHotkey from './applyHotkeys/applySwapColorsHotkey';
+import applyAddFrameHotkey from './applyHotkeys/applyAddFrameHotkey';
+import applyDuplicateFrameHotkey from './applyHotkeys/applyDuplicateFrameHotkey';
+import applyDeleteFrameHotkey from './applyHotkeys/applyDeleteFrameHotkey';
+import applyFullscreenHotkey from './applyHotkeys/applyFullscreenHotkey';
+import applyStartPreviewHotkey from './applyHotkeys/applyStartPreviewHotkey';
+import applyIncreaseSizeHotkey from './applyHotkeys/applyIncreaseSizeHotkey';
+import applyDecreaseSizeHotkey from './applyHotkeys/applyDecreaseSizeHotkey';
+import applyNextFrameHotkey from './applyHotkeys/applyNextFrameHotkey';
+import applyPreviousFrameHotkey from './applyHotkeys/applyPreviousFrameHotkey';
+
+export default function removeShortcuts() {
+  document.removeEventListener('keydown', applyPenHotkey);
+  document.removeEventListener('keydown', applyMirrorPenHotkey);
+  document.removeEventListener('keydown', applyEraserHotkey);
+  document.removeEventListener('keydown', applyPaintBucketHotkey);
+  document.removeEventListener('keydown', applyColorPickerHotkey);
+  document.removeEventListener('keydown', applyDitheringToolHotkey);
+  document.removeEventListener('keydown', applyInversionToolHotkey);
+  document.removeEventListener('keydown', applyRectangleHotkey);
+  document.removeEventListener('keydown', applyLightenHotkey);
+  document.removeEventListener('keydown', applyDarkenHotkey);
+  document.removeEventListener('keydown', applyMagicPaintHotkey);
+  document.removeEventListener('keydown', applySwapColorsHotkey);
+  document.removeEventListener('keydown', applyAddFrameHotkey);
+  document.removeEventListener('keydown', applyDuplicateFrameHotkey);
+  document.removeEventListener('keydown', applyDeleteFrameHotkey);
+  document.removeEventListener('keydown', applyFullscreenHotkey);
+  document.removeEventListener('keydown', applyStartPreviewHotkey);
+  document.removeEventListener('keydown', applyIncreaseSizeHotkey);
+  document.removeEventListener('keydown', applyDecreaseSizeHotkey);
+  document.removeEventListener('keydown', applyNextFrameHotkey);
+  document.removeEventListener('keydown', applyPreviousFrameHotkey);
+}

@@ -3,6 +3,6 @@ export default function frameMapping() {
   const selectedFrame = document.querySelector('.selected-frame');
   const contextFrame = selectedFrame.getContext('2d');
   contextFrame.imageSmoothingEnabled = false;
-  contextFrame.clearRect(0, 0, 128, 128);
-  contextFrame.drawImage(canvas, 0, 0, 128, 128);
+  contextFrame.clearRect(0, 0, selectedFrame.width, selectedFrame.height);
+  contextFrame.drawImage(canvas, 0, 0, selectedFrame.width, selectedFrame.height);
 }

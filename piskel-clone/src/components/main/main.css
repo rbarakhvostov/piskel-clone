@@ -3,11 +3,11 @@
   grid-template-areas: 
     "toolbar frames-container canvas preview-container"
     "palette frames-container canvas preview-container"
-    "canvas-color frames-container canvas info";
-  /* grid-column-gap: 30px; */
+    "canvas-color frames-container canvas info" 
+    "modal-window-icon frames-container canvas info";
+  grid-column-gap: 30px; 
   align-items: center;
   justify-items: center;
   max-width: 1400px;
-  /* height: 540px; */
-  margin: 70px auto 0;
+  margin: 20px auto 0;
 }

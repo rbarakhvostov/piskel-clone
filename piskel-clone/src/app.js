@@ -2,7 +2,7 @@ import renderHeader from './components/header/renderHeader';
 import renderMain from './components/main/renderMain';
 import selectTool from './utilities/selectTool';
 import applyTool from './utilities/applyTool';
-import addFrame from './utilities/newFrame/addFrame';
+import addFrame from './utilities/addFrame';
 import selectFrame from './utilities/selectFrame';
 import startDrawWithPen from './utilities/startDrawWithPen';
 import startPreview from './utilities/startPreview';
@@ -25,7 +25,7 @@ function start() {
   const framesButton = document.querySelector('.frames-button');
   framesButton.addEventListener('click', addFrame);
 
-  document.querySelector('.preview-button').addEventListener('click', startPreview);
+  document.querySelector('.start-animation-button').addEventListener('click', startPreview);
   document.querySelector('.preview-fullscreen').addEventListener('click', requestFullscreen);
   document.querySelector('.canvas-color').addEventListener('input', chooseCanvasColor);
 

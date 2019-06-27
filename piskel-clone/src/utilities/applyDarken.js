@@ -33,11 +33,7 @@ export default function applyLighten() {
     darken = false;
     frameMapping();
   }
-  // function mouseleaveHandler() {
-  //   paint = false;
-  // }
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
-  // canvas.addEventListener('mouseleave', mouseleaveHandler);
 }

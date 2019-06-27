@@ -1,0 +1,15 @@
+.preview-range-container {
+  margin-top: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.label-preview-range {
+  font-weight: bold;
+}
+.preview-range {
+  outline: none;
+}
+.range-value {
+  font-weight: bold;
+}

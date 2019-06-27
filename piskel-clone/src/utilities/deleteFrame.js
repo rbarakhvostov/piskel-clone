@@ -1,6 +1,5 @@
 import changeFrameNumbers from './changeFrameNumbers';
 import replaceCanvas from './replaceCanvas';
-// import startDrawWithPen from './startDrawWithPen';
 
 export default function deleteFrame(e) {
   const { target } = e;
@@ -11,7 +10,7 @@ export default function deleteFrame(e) {
   if (frameWrappers.length === 1) return;
   if (target === deleteFrameContainer || target === deleteFrameIcon) {
     if (this.querySelector('.frame').classList.contains('selected-frame')
-        && this !== frameWrappers[0]) { // this !== frameWrappers[0] ??????????????????????????????
+        && this !== frameWrappers[0]) {
       this.previousElementSibling.querySelector('.frame').classList.add('selected-frame');
       selectedFrame = this.previousElementSibling.querySelector('.selected-frame');
     } else if (this.querySelector('.frame').classList.contains('selected-frame')
@@ -20,7 +19,6 @@ export default function deleteFrame(e) {
       selectedFrame = this.nextElementSibling.querySelector('.selected-frame');
     }
     replaceCanvas(selectedFrame);
-    // startDrawWithPen();
     this.remove();
     changeFrameNumbers();
   }

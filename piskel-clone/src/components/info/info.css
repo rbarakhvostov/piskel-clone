@@ -1,9 +1,8 @@
 .info {
   grid-area: info;
   font-size: 14px;
-  width: 120px;
-  border: 1px solid #000;
   font-weight: bold;
+  justify-self: start;
 }
 .canvas-size {
   margin-right: 10px;
