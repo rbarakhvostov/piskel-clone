@@ -1,15 +1,14 @@
 .header {
-  background-color: #ffffff;
+  background-color: #ffffff;  
 }
-.navigation {
-  display: grid;
-  grid-template-columns: 5% auto 5%;
-  align-items: center;
-  justify-items: center;
+.header-container {
   height: 30px;
   font-size: 20px;
   max-width: 1400px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title > a {
   color: #000000;
