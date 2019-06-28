@@ -1,7 +1,6 @@
 .info {
   grid-area: info;
   font-size: 14px;
-  font-weight: bold;
   justify-self: start;
 }
 .canvas-size {

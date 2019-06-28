@@ -26,7 +26,6 @@
   align-items: center;
   background-color: #0cafb7;
   user-select: none;
-  font-weight: bold;
 }
 .frame-number-container:active {
   opacity: 0;
