@@ -3,7 +3,7 @@ import renderPreview from './preview/renderPreview';
 import renderStartAnimationButton from './startAnimationButton/renderStartAnimationButton';
 import renderPreviewRange from './previewRange/renderPreviewInputRange';
 import renderPreviewFullscreenButton from './previewFullscreenButton/renderPreviewFullScreenButton';
-import renderSaveAnimationButton from './saveAnimationButton/renderSaveButton';
+import renderExportContainer from './exportContainer/renderExportContainer';
 
 export default function renderPreviewContainer() {
   const main = document.querySelector('.main');
@@ -12,5 +12,5 @@ export default function renderPreviewContainer() {
   renderPreviewRange();
   renderStartAnimationButton();
   renderPreviewFullscreenButton();
-  renderSaveAnimationButton();
+  renderExportContainer();
 }

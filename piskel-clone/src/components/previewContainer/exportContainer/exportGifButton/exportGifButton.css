@@ -1,0 +1,18 @@
+.export-gif-button {
+  height: 25px;
+  width: 50px;
+  font-size: 14px;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  border: 1px solid #000000;
+  margin-top: 10px;
+}
+.export-gif-button:hover {
+  background-color: #0cafb730;
+}
+.export-gif-button:active {
+  background-color: #0cafb7;
+}

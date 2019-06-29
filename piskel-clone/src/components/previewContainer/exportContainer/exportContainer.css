@@ -1,4 +1,4 @@
-.save-animation-button {
+.export-container button {
   height: 25px;
   width: 50px;
   font-size: 14px;
@@ -10,9 +10,9 @@
   border: 1px solid #000000;
   margin-top: 10px;
 }
-.save-animation-button:hover {
+.export-container button:hover {
   background-color: #0cafb730;
 }
-.save-animation-button:active {
+.export-container button:active {
   background-color: #0cafb7;
 }
