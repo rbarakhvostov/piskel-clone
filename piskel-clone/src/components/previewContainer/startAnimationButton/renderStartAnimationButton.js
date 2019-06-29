@@ -1,4 +1,4 @@
-import './previewButton.css';
+import './startAnimationButton.css';
 
 export default function renderStartAnimationButton() {
   const previewContainer = document.querySelector('.preview-container');

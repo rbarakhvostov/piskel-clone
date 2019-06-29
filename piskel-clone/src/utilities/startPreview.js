@@ -6,19 +6,31 @@ export default function startPreview() {
   previewContext.imageSmoothingEnabled = false;
   function cb(el, i) {
     setTimeout(() => {
-      previewContext.clearRect(0, 0, 256, 256);
-      previewContext.drawImage(el, 0, 0, 256, 256);
+      previewContext.clearRect(0, 0, preview.width, preview.height);
+      previewContext.drawImage(el, 0, 0, preview.width, preview.height);
     }, i * 1000 / previewRange.value);
   }
   setTimeout(function startAnimation() {
     frames = document.querySelectorAll('.frame');
-    if (previewRange.value === '0') {
-      const selectedFrame = document.querySelector('.selected-frame');
-      previewContext.clearRect(0, 0, 256, 256);
-      previewContext.drawImage(selectedFrame, 0, 0, 256, 256);
-    } else {
-      frames.forEach(cb);
-    }
+    frames.forEach(cb);
     setTimeout(startAnimation, frames.length * 1000 / previewRange.value);
   }, 0);
 }
+
+// function cb(el, i) {
+//   setTimeout(() => {
+//     previewContext.clearRect(0, 0, 256, 256);
+//     previewContext.drawImage(el, 0, 0, 256, 256);
+//   }, i * 1000 / previewRange.value);
+// }
+// setTimeout(function startAnimation() {
+//   frames = document.querySelectorAll('.frame');
+//   if (previewRange.value === '0') {
+//     const selectedFrame = document.querySelector('.selected-frame');
+//     previewContext.clearRect(0, 0, 256, 256);
+//     previewContext.drawImage(selectedFrame, 0, 0, 256, 256);
+//   } else {
+//     frames.forEach(cb);
+//   }
+//   setTimeout(startAnimation, frames.length * 1000 / previewRange.value);
+// }, 0);
