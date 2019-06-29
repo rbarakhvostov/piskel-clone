@@ -19,6 +19,9 @@ import applyIncreaseSizeHotkey from './applyHotkeys/applyIncreaseSizeHotkey';
 import applyDecreaseSizeHotkey from './applyHotkeys/applyDecreaseSizeHotkey';
 import applyNextFrameHotkey from './applyHotkeys/applyNextFrameHotkey';
 import applyPreviousFrameHotkey from './applyHotkeys/applyPreviousFrameHotkey';
+import applyExportGifHotkey from './applyHotkeys/applyExportGifHotkey';
+import applyExportApngHotkey from './applyHotkeys/applyExportApngHotkey';
+import applyExportRmnHotkey from './applyHotkeys/applyExportRmnHotkey';
 
 export default function assignShortcuts() {
   document.addEventListener('keydown', applyPenHotkey);
@@ -42,4 +45,7 @@ export default function assignShortcuts() {
   document.addEventListener('keydown', applyDecreaseSizeHotkey);
   document.addEventListener('keydown', applyNextFrameHotkey);
   document.addEventListener('keydown', applyPreviousFrameHotkey);
+  document.addEventListener('keydown', applyExportGifHotkey);
+  document.addEventListener('keydown', applyExportApngHotkey);
+  document.addEventListener('keydown', applyExportRmnHotkey);
 }

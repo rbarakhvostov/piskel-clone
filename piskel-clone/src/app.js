@@ -28,8 +28,6 @@ function start() {
   document.querySelector('.start-animation-button').addEventListener('click', startPreview);
   document.querySelector('.preview-fullscreen').addEventListener('click', requestFullscreen);
   document.querySelector('.canvas-color').addEventListener('input', chooseCanvasColor);
-
-  // document.querySelector('.canvas').addEventListener('mousemove', showInfo);
 }
 
 start();

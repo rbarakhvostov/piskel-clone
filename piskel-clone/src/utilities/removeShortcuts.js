@@ -19,6 +19,9 @@ import applyIncreaseSizeHotkey from './applyHotkeys/applyIncreaseSizeHotkey';
 import applyDecreaseSizeHotkey from './applyHotkeys/applyDecreaseSizeHotkey';
 import applyNextFrameHotkey from './applyHotkeys/applyNextFrameHotkey';
 import applyPreviousFrameHotkey from './applyHotkeys/applyPreviousFrameHotkey';
+import applyExportGifHotkey from './applyHotkeys/applyExportGifHotkey';
+import applyExportApngHotkey from './applyHotkeys/applyExportApngHotkey';
+import applyExportRmnHotkey from './applyHotkeys/applyExportRmnHotkey';
 
 export default function removeShortcuts() {
   document.removeEventListener('keydown', applyPenHotkey);
@@ -42,4 +45,7 @@ export default function removeShortcuts() {
   document.removeEventListener('keydown', applyDecreaseSizeHotkey);
   document.removeEventListener('keydown', applyNextFrameHotkey);
   document.removeEventListener('keydown', applyPreviousFrameHotkey);
+  document.removeEventListener('keydown', applyExportGifHotkey);
+  document.removeEventListener('keydown', applyExportApngHotkey);
+  document.removeEventListener('keydown', applyExportRmnHotkey);
 }
