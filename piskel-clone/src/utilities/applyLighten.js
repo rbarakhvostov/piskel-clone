@@ -1,17 +1,6 @@
 import frameMapping from './frameMapping';
 
 export default function applyLighten() {
-  // const canvas = document.querySelector('.canvas');
-  // const context = canvas.getContext('2d');
-  // const unitsNumber = 64;
-  // const pixelSize = canvas.width / unitsNumber;
-  // const mouseX = Math.floor((e.pageX - canvas.offsetLeft) / pixelSize) * pixelSize;
-  // const mouseY = Math.floor((e.pageY - canvas.offsetTop) / pixelSize) * pixelSize;
-  // const srcImg = context.getImageData(mouseX, mouseY, pixelSize, pixelSize);
-  // for (let i = 3, l = srcImg.data.length; i < l; i += 4) {
-  //   srcImg.data[i] -= 17;
-  // }
-  // context.putImageData(srcImg, mouseX, mouseY);
   const canvas = document.querySelector('.canvas');
   const context = canvas.getContext('2d');
   const toolSize = document.querySelector('.tool-sizes');
@@ -44,11 +33,7 @@ export default function applyLighten() {
     lighten = false;
     frameMapping();
   }
-  // function mouseleaveHandler() {
-  //   paint = false;
-  // }
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
-  // canvas.addEventListener('mouseleave', mouseleaveHandler);
 }

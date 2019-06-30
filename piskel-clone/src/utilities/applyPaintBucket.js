@@ -16,10 +16,9 @@ export default function applyPaintBucket() {
   }
   function colorPixel(data, pos, color) {
     const copyData = data;
-    copyData[pos] = color.r; // || 0;
-    copyData[pos + 1] = color.g; // || 0;
-    copyData[pos + 2] = color.b; // || 0;
-    // copyData[pos + 3] = Object.prototype.hasOwnProperty.call(color, 'a') ? color.a : 255;
+    copyData[pos] = color.r;
+    copyData[pos + 1] = color.g;
+    copyData[pos + 2] = color.b;
     copyData[pos + 3] = 255;
   }
 

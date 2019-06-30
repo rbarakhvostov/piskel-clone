@@ -11,6 +11,8 @@ import renderDitheringTool from '../tools/ditheringTool/renderDitheringTool';
 import renderInversionTool from '../tools/inversion/renderInversionTool';
 import renderMirrorPenTool from '../tools/mirrorPen/renderMirrorPenTool';
 import renderPaintingSamePixels from '../tools/magic-paint/renderMagicPaint';
+import selectTool from '../../utilities/selectTool';
+import applyTool from '../../utilities/applyTool';
 
 export default function renderToolbar() {
   const main = document.querySelector('.main');
@@ -27,4 +29,7 @@ export default function renderToolbar() {
   renderInversionTool();
   renderMirrorPenTool();
   renderPaintingSamePixels();
+  const toolbar = document.querySelector('.toolbar');
+  toolbar.addEventListener('click', selectTool);
+  toolbar.addEventListener('click', applyTool);
 }

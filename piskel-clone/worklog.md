@@ -29,6 +29,7 @@ Jun 29     | Jun 29       | 6h          |implementation of the ability to export
 Jun 30     | Jun 30       | 3h          |implementation of the ability to export the final result  in any format                                                                                                 |
 Jun 30     | Jun 30       | 2h          |implementation of the shortcuts for exporting the final result|
 Jun 30     | Jun 30       | 2h          |tests implementation                                          |
+Jun 30     | Jun 30       | 2h          |code refactoring                                         |
 
 
 

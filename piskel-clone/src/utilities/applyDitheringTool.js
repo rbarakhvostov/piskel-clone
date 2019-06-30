@@ -44,11 +44,7 @@ export default function applyDitheringTool() {
     paint = false;
     frameMapping();
   }
-  // function mouseleaveHandler() {
-  //   paint = false;
-  // }
   canvas.addEventListener('mousedown', mousedownHandler);
   canvas.addEventListener('mousemove', mousemoveHandler);
   canvas.addEventListener('mouseup', mouseupHandler);
-  // canvas.addEventListener('mouseleave', mouseleaveHandler);
 }
