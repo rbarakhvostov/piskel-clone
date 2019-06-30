@@ -2,7 +2,7 @@
 import GIF from 'gif.js.optimized';
 import download from 'downloadjs';
 
-export default function exportGif(format, mimeType) {
+export default function exportAnimationWithShortcuts(format, mimeType) {
   const gif = new GIF({
     worker: 2,
     quality: 10,
