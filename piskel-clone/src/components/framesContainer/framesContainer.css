@@ -1,8 +1,8 @@
 .frames-container {
   grid-area: frames-container;
   align-self: start;
+  width: 165px;
   height: 540px;
   overflow-y: auto;
   cursor: pointer;
-  width: 165px;
 }

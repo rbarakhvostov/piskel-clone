@@ -1,10 +1,9 @@
 .preview-range-container {
-  margin-top: 10px;
-  width: 200px;
   display: flex;
   justify-content: space-between;
+  width: 200px;
+  margin-top: 10px;
 }
 .preview-range {
   outline: none;
 }
-

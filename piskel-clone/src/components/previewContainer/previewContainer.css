@@ -1,8 +1,8 @@
 .preview-container {
-  grid-area: preview-container;
   display: flex;
-  align-items: center;
+  grid-area: preview-container;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-self: start;
 }

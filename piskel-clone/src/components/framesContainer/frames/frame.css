@@ -12,18 +12,18 @@
   border: 2px solid #0cafb7;
 }
 .inner-wrap {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   background-color: #d4d6d450;
 }
 .frame-number-container {
-  width: 20px;
-  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20px;
+  height: 20px;
   background-color: #0cafb7;
   user-select: none;
 }
@@ -31,30 +31,30 @@
   opacity: 0;
 }
 .delete-frame-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
   background-color: #0cafb7;
+  opacity: 0;
 }
 .duplicate-frame-container {
-  height: 20px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 110px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  opacity: 0;
+  width: 20px;
+  height: 20px;
   background-color: #0cafb7;
+  opacity: 0;
 }
-.delete-frame-container:hover, 
+.delete-frame-container:hover,
 .duplicate-frame-container:hover {
   color: #0cafb7;
 }
 .frame-wrapper:hover .delete-frame-container,
-.frame-wrapper:hover .duplicate-frame-container{
+.frame-wrapper:hover .duplicate-frame-container {
   opacity: 1;
 }

@@ -2,54 +2,53 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* overflow: hidden; */
-  background-color: #5f5d5d;
-  color: #000000;
-  font-size: 16px;
   font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: #5f5d5d;
   user-select: none;
 }
 .content {
   min-height: calc(100vh - 30px);
 }
 .header {
-  background-color: #ffffff;
-  height: 30px;
-  font-size: 20px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #ffffff;
 }
 .main {
-  margin: 10px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px auto 0;
 }
 .app-info {
-  margin-bottom: 10px;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 .app-info h2 {
   margin-bottom: 10px;
   font-size: 22px;
 }
 .app-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 40px;
-  background-color: #0cafb750;
-  color: #000000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: #0cafb750;
 }
 .app-link:hover {
   background-color: #0cafb7;
@@ -64,30 +63,32 @@ body {
 .gif {
   border: 1px solid #000000;
 }
-.live-preview, .export{
-  background-color: #d4d6d4;
-  width: 900px;
+.live-preview,
+.export {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 900px;
   margin-bottom: 15px;
+  background-color: #d4d6d4;
 }
-.live-preview h3, .export h3 {
+.live-preview h3,
+.export h3 {
   font-size: 22px;
   color: #0cafb7;
 }
 .footer {
-  background-color: #ffffff;
-  height: 30px;
-  font-size: 20px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #ffffff;
 }
 .author-info {
-  font-size: 18px;
   margin-right: 30px;
+  font-size: 18px;
 }
 .author-links-container a {
   font-size: 30px;
@@ -95,5 +96,5 @@ body {
   text-decoration: none;
 }
 .author-links-container a:hover {
-  color :#0cafb7;
+  color: #0cafb7;
 }

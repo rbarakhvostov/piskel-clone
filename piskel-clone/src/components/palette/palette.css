@@ -1,10 +1,10 @@
 .palette {
-  width: 95px;
-  height: 95px;
-  grid-area: palette;
   display: flex;
+  grid-area: palette;
   justify-content: space-between;
   align-items: center;
+  width: 95px;
+  height: 95px;
 }
 .palette input {
   width: 30px;

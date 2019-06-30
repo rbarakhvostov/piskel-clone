@@ -1,8 +1,8 @@
 .tool-sizes {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   margin: 5px 0 5px 0;
 }
 .tool-size {
@@ -10,21 +10,21 @@
   left: -2000px;
 }
 .tool-size-label {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border: 1px solid #000000;
   width: 20px;
   height: 20px;
+  border: 1px solid #000000;
   cursor: pointer;
 }
 .tool-size-label:hover {
   background-color: #0cafb730;
 }
 .tool-size-label div {
-  border: 1px solid #000000;
   background-color: #000000;
+  border: 1px solid #000000;
 }
 .tool-size-label-1 div {
   width: 5px;

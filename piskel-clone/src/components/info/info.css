@@ -1,7 +1,7 @@
 .info {
   grid-area: info;
-  font-size: 14px;
   justify-self: start;
+  font-size: 14px;
 }
 .canvas-size {
   margin-right: 10px;

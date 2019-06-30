@@ -4,15 +4,15 @@
   margin-bottom: 5px;
 }
 .save-shortcuts-button {
-  height: 25px;
   width: 60px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 18px;
   background-color: #ffffff;
+  border: 1px solid #000000;
   outline: none;
   cursor: pointer;
   user-select: none;
-  font-size: 18px;
-  font-weight: bold;
-  border: 1px solid #000000;
 }
 .save-shortcuts-button:hover {
   background-color: #d4d6d4;
