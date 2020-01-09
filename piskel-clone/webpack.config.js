@@ -24,7 +24,8 @@ module.exports = {
     ],
   },
   plugins: [new HtmlWebpackPlugin({
-    template: 'index.html',
+    template: 'public/index.html',
+    favicon: 'public/favicon.png',
   })],
   devServer: {
     port: 9000,
