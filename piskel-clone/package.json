@@ -35,5 +35,10 @@
   "dependencies": {
     "downloadjs": "^1.4.7",
     "gif.js.optimized": "^1.0.1"
-  }
+  },
+  "browserslist": [
+    "last 3 chrome version",
+    "last 3 firefox version",
+    "last 3 safari version"
+  ]
 }
