@@ -92,13 +92,5 @@ export default function renderShortcutsContainer() {
         <input class="hotkey" maxlength="1" id="export-gif-hotkey" type="text" value="C">
         <label for="export-gif-hotkey">export gif</label>
       </div>
-      <div class="export-apng-hotkey-container">
-        <input class="hotkey" maxlength="1" id="export-apng-hotkey" type="text" value="V">
-        <label for="export-apng-hotkey">export apng</label>
-      </div>
-      <div class="export-rmn-hotkey-container">
-        <input class="hotkey" maxlength="1" id="export-rmn-hotkey" type="text" value="G">
-        <label for="export-rmn-hotkey">export rmn</label>
-      </div>
     </div>`);
 }
