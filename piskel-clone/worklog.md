@@ -26,8 +26,6 @@ Jun 27     | Jun 27       | 4h          |modal window to change keyboard shortcu
 Jun 28     | Jun 28       | 3h          |modification in inversion tool implementation                 |
 Jun 28     | Jun 28       | 4h          |landing page implementation                                   |
 Jun 29     | Jun 29       | 6h          |implementation of the ability to export the final result      |
-Jun 30     | Jun 30       | 3h          |implementation of the ability to export the final result  in any format                                                                                                 |
-Jun 30     | Jun 30       | 2h          |implementation of the shortcuts for exporting the final result|
 Jun 30     | Jun 30       | 2h          |tests implementation                                          |
 Jun 30     | Jun 30       | 2h          |code refactoring                                         |
 
