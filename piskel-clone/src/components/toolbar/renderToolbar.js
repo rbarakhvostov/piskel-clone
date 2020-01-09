@@ -1,4 +1,3 @@
-import './toolbar.css';
 import renderPen from '../tools/pen/renderPen';
 import renderEraser from '../tools/eraser/renderEraser';
 import renderPaintBucket from '../tools/paint-bucket/renderPaintBucket';
@@ -13,6 +12,8 @@ import renderMirrorPenTool from '../tools/mirrorPen/renderMirrorPenTool';
 import renderPaintingSamePixels from '../tools/magic-paint/renderMagicPaint';
 import selectTool from '../../utilities/selectTool';
 import applyTool from '../../utilities/applyTool';
+
+import './toolbar.css';
 
 export default function renderToolbar() {
   const main = document.querySelector('.main');
