@@ -1,4 +1,3 @@
-// for shortcut;
 import GIF from 'gif.js.optimized';
 import download from 'downloadjs';
 
