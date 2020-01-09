@@ -1,0 +1,60 @@
+.frame-wrapper {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  margin-bottom: 5px;
+}
+.frame {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+.selected-frame {
+  border: 2px solid #0cafb7;
+}
+.inner-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #d4d6d450;
+}
+.frame-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #0cafb7;
+  user-select: none;
+}
+.frame-number-container:active {
+  opacity: 0;
+}
+.delete-frame-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #0cafb7;
+  opacity: 0;
+}
+.duplicate-frame-container {
+  position: absolute;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #0cafb7;
+  opacity: 0;
+}
+.delete-frame-container:hover,
+.duplicate-frame-container:hover {
+  color: #0cafb7;
+}
+.frame-wrapper:hover .delete-frame-container,
+.frame-wrapper:hover .duplicate-frame-container {
+  opacity: 1;
+}

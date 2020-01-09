@@ -1,0 +1,22 @@
+.save-shortcuts-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.save-shortcuts-button {
+  width: 60px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+.save-shortcuts-button:hover {
+  background-color: #d4d6d4;
+}
+.save-shortcuts-button:active {
+  background-color: #0cafb7;
+}

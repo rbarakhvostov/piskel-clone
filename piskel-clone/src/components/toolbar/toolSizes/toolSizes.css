@@ -1,0 +1,43 @@
+.tool-sizes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+.tool-size {
+  position: absolute;
+  left: -2000px;
+}
+.tool-size-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.tool-size-label:hover {
+  background-color: #0cafb730;
+}
+.tool-size-label div {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.tool-size-label-1 div {
+  width: 5px;
+  height: 5px;
+}
+.tool-size-label-2 div {
+  width: 10px;
+  height: 10px;
+}
+.tool-size-label-3 div {
+  width: 15px;
+  height: 15px;
+}
+.tool-size-label.selected-size {
+  background-color: #0cafb7;
+}

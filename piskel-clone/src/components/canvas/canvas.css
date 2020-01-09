@@ -1,0 +1,5 @@
+.canvas {
+  grid-area: canvas;
+  background-color: #ffffff;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.preview-range-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 10px;
+}
+.preview-range {
+  outline: none;
+}

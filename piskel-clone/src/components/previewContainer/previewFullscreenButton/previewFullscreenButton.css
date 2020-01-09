@@ -1,0 +1,19 @@
+.preview-fullscreen {
+  width: 85px;
+  height: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: none;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+.preview-fullscreen:hover {
+  background-color: #0cafb730;
+}
+.preview-fullscreen:active {
+  background-color: #0cafb7;
+}
