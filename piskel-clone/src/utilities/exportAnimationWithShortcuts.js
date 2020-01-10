@@ -1,6 +1,5 @@
 import GIF from 'gif.js.optimized';
 import download from 'downloadjs';
-import '../gif.worker';
 
 export default function exportAnimationWithShortcuts(format, mimeType) {
   const gif = new GIF({
