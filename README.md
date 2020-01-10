@@ -1,6 +1,6 @@
 # Piskel Clone
 
-## Application for pixel art animaton
+## Application for pixel art animation
 
 ### You can export your gif
 
